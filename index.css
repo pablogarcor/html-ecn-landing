@@ -1,5 +1,6 @@
 body{
-    width: 100vh;
+    margin: 0.4em 0;
+    width: fit-content;
     overflow-x: hidden;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
@@ -7,7 +8,6 @@ body{
     background:#0b2840;
     padding: 4em;
     width: 100vw;
-    position: absolute;
     left: 0;
     transform: skewY(-4deg);
 }
@@ -25,4 +25,56 @@ body{
     font-size: 2em;
     max-width: 20em;
     margin: auto;
+}
+
+.section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 6em auto;
+    width: fit-content;
+}
+
+.section-2 > div:not(:last-child){
+    margin-bottom: 4em;
+
+}
+
+.section-2 > div > img{
+    height: 10em;
+}
+
+.section-2 > div > h4{
+    font-weight: 500;
+}
+
+.section-contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background: #C2C2C2;
+    padding: 1em;
+}
+
+.section-contact > a{
+    display: flex;
+    align-items: center;
+}
+
+.section-contact > a > img{
+    height: 2em;
+    margin-right: 1em;
+}
+
+.section-contact > a > p{
+    margin: 0;
+}
+
+.footer{
+    text-align: center;
+    background:#0b2840;
+    color: white;
+    padding: 1.2em 2.5em;
 }
