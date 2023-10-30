@@ -1,11 +1,12 @@
 body{
+    font-size: 12px;
     margin: 0.4em 0;
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
 .section-1{
     background:#0b2840;
-    padding: 4em;
+    padding: 4em 1em;
     left: 0;
     transform: skewY(-4deg);
 }
@@ -32,6 +33,7 @@ body{
     align-content: center;
     margin: 6em auto;
     width: fit-content;
+    padding: 0 1em;
 }
 
 .section-2 > div:not(:last-child){
@@ -40,7 +42,7 @@ body{
 }
 
 .section-2 > div > img{
-    height: 10em;
+    height: 8em;
 }
 
 .section-2 > div > h4{
@@ -79,4 +81,14 @@ body{
 
 .logo{
     margin: 0.4em
+}
+
+@media (min-width: 769px ){
+    body{
+        font-size: 18px;
+    }
+
+    .section-2 > div > img{
+        height: 10em;
+    }
 }
