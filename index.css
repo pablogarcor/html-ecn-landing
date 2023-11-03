@@ -58,18 +58,17 @@ body{
     padding: 1em;
 }
 
-.section-contact > a{
+.section-contact > div{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.4em;
 }
 
-.section-contact > a > img{
-    height: 2em;
+.section-contact > img{
+    height: 3.5em;
     margin-right: 1em;
-}
-
-.section-contact > a > p{
-    margin: 0;
 }
 
 .footer{
