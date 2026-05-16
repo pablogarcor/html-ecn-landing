@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>EasyCryptoName</title>
+    <title>EasyCryptoName — Names & Domains for Pharos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EasyCryptoName brings ENS-like names to Pharos: human-readable domains that resolve to wallets, smart contracts, and on-chain profiles. Built as an ecosystem primitive, designed for security, and shipped with clear milestones.">
+    <meta name="color-scheme" content="light">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -11,45 +13,337 @@
     <link rel="manifest" href="assets/favicon/site.webmanifest">
     <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#fbfcfe">
+    <meta property="og:title" content="EasyCryptoName — Names & Domains for Pharos">
+    <meta property="og:description" content="An ENS-like naming layer for Pharos L1: human-readable names, on-chain records, and a security-first roadmap designed for ecosystem adoption.">
+    <meta property="og:type" content="website">
 </head>
-<body>
-    <div id="container">
-        <img class="logo" src="assets/logo-ecn.webp" alt="EasyCryptoName Logo">
-        <div class="section-1">
-            <h1>Crypto consulting services</h1>
-            <h3>Expert guidance for your crypto and blockchain initiatives</h3>
+<body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="EasyCryptoName home">
+                <img
+                    class="brand-logo"
+                    src="assets/logo-ecn.webp"
+                    width="175"
+                    height="64"
+                    alt=""
+                    decoding="async"
+                    fetchpriority="high"
+                >
+                <span class="brand-name">EasyCryptoName</span>
+            </a>
+
+            <details class="nav-mobile">
+                <summary class="nav-mobile-toggle" aria-label="Open menu">
+                    <span class="nav-mobile-icon" aria-hidden="true"></span>
+                </summary>
+                <nav class="nav-mobile-panel" aria-label="Mobile">
+                    <a href="#product">Product</a>
+                    <a href="#why">Why Pharos</a>
+                    <a href="#milestones">Milestones</a>
+                    <a href="#whitepaper">Whitepaper</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </details>
+
+            <nav class="nav-desktop" aria-label="Primary">
+                <a href="#product">Product</a>
+                <a href="#why">Why Pharos</a>
+                <a href="#milestones">Milestones</a>
+                <a href="#whitepaper">Whitepaper</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-        <div class="section-2">
-            <div style="display:flex;align-items: center">
-                <img src="assets/ecn-crypto.svg" alt="EasyCryptoName consulting"/>
-                <h4 style="display: inline; max-width: 20em; margin-left: 2em" >We specialize in providing expert guidance for crypto projects, helping you unlock their full potential for success.</h4>
-            </div>
-            <div style="display:flex;align-items: center">
-                <h4 style="display: inline; max-width: 20em; margin-left: 2em" >We lead your crypto project to achieve its objectives, offering expert insights and guidance at every step.</h4>
-                <img src="assets/ecn-document.svg" alt="EasyCryptoName document"/>
-            </div>
-            <div style="display:flex;align-items: center">
-                <img src="assets/ecn-laptop.svg" alt="EasyCryptoName work"/>
-                <h4 style="display: inline; max-width: 20em; margin-left: 2em" >Our strategies ensure your crypto project excels as we navigate the landscape together, securely and effectively.</h4>
-            </div>
-        </div>
-        <div class="section-contact">
-                <img src="assets/mail-icon.png" alt="mail"/>
-                <div>
-                    <a href="mailto:admin@easycryptoname.com">
-                        admin@easycryptoname.com
-                    </a>
-                    <a href="mailto:myblockchaindomain@gmail.com">
-                        myblockchaindomain@gmail.com
-                    </a>
+    </header>
+
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="eyebrow">Pharos ecosystem primitive</p>
+                    <h1 id="hero-title">Human‑readable names for <span class="grad">Pharos</span>.</h1>
+                    <p class="lead">
+                        EasyCryptoName is a Pharos-native naming layer for wallets, smart contracts, and profiles — shipped with
+                        clear milestones, security gates, and integration artifacts that drive real adoption.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#whitepaper">Read the whitepaper</a>
+                        <a class="hero-link" href="#milestones">View milestones</a>
+                    </div>
+
+                    <div class="hero-inline" aria-label="Name examples">
+                        <div class="hero-search" role="group" aria-label="Example names">
+                            <span class="hero-search-label" aria-hidden="true">Example</span>
+                            <span class="hero-search-value">alice.pharos</span>
+                            <span class="hero-search-arrow" aria-hidden="true">→</span>
+                            <span class="hero-search-resolve">0x7b…4C2a</span>
+                        </div>
+                        <p class="hero-note">
+                            Designed for wallets & dApps: predictable resolution rules, reverse lookup, and an audit-ready core.
+                        </p>
+                    </div>
                 </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <div class="hero-art-stack">
+                        <div class="hero-card hero-card-main">
+                            <img src="assets/ecn-crypto.svg" alt="" loading="eager" decoding="async">
+                            <div class="hero-card-caption">
+                                <span class="tag">Registry</span>
+                                <span class="tag">Resolver</span>
+                                <span class="tag">Reverse</span>
+                            </div>
+                        </div>
+                        <div class="hero-card hero-card-secondary">
+                            <p class="hero-mini-title">Grant outcomes</p>
+                            <ul class="mini-list">
+                                <li>Open interfaces & specs</li>
+                                <li>Integration guides</li>
+                                <li>Milestone-based delivery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="product" class="section" aria-labelledby="product-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="product-title">What EasyCryptoName ships for Pharos</h2>
+                    <p class="section-lead">
+                        A lean on-chain core, plus the integration layer that makes names usable on day one.
+                    </p>
+                </header>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon" aria-hidden="true">
+                            <img src="assets/ecn-document.svg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Registry + ownership rules</h3>
+                        <p>
+                            A canonical registry with explicit interfaces and conservative upgrade boundaries — so apps can depend on it.
+                        </p>
+                        <ul class="list">
+                            <li>Commit‑reveal to reduce front‑running</li>
+                            <li>Renewals + grace periods</li>
+                            <li>Indexer-friendly events</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon" aria-hidden="true">
+                            <img src="assets/ecn-laptop.svg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Resolver records wallets need</h3>
+                        <p>
+                            Predictable resolution for addresses, profiles, and content pointers — with documented edge cases.
+                        </p>
+                        <ul class="list">
+                            <li>Address, text, and content records</li>
+                            <li>Reverse resolution</li>
+                            <li>Safe record permissions</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon" aria-hidden="true">
+                            <img src="assets/ecn-crypto.svg" alt="" loading="lazy" decoding="async">
+                        </div>
+                        <h3>Adoption package</h3>
+                        <p>
+                            A grant should buy adoption: integration guides, reference code, and a checklist to make names work across Pharos.
+                        </p>
+                        <ul class="list">
+                            <li>SDK patterns for dApps</li>
+                            <li>Wallet integration examples</li>
+                            <li>Spec-driven documentation</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="why" class="section section-alt" aria-labelledby="why-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="why-title">Why this matters for Pharos</h2>
+                    <p class="section-lead">
+                        Naming is UX infrastructure. It reduces errors, improves onboarding, and creates a shared identity layer for the ecosystem.
+                    </p>
+                </header>
+
+                <div class="feature-grid">
+                    <article class="feature">
+                        <h3>Safer transfers</h3>
+                        <p>Users send to a name, not a 42‑character address. Fewer mistakes, higher trust.</p>
+                    </article>
+                    <article class="feature">
+                        <h3>Faster onboarding</h3>
+                        <p>One identity that works everywhere on Pharos — wallets, explorers, and dApps.</p>
+                    </article>
+                    <article class="feature">
+                        <h3>Composable profiles</h3>
+                        <p>Records for metadata and content pointers, portable across apps by design.</p>
+                    </article>
+                    <article class="feature feature-callout">
+                        <h3>Foundation-aligned deliverables</h3>
+                        <p>Specs, reference implementation, integrations, and milestone-based delivery you can verify.</p>
+                        <a class="feature-link" href="#milestones">See milestones →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="milestones" class="section" aria-labelledby="milestones-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="milestones-title">Milestones (grant-ready execution)</h2>
+                    <p class="section-lead">
+                        Clear scope, measurable outputs, and security gates. Each milestone is reviewable end-to-end by the foundation.
+                    </p>
+                </header>
+
+                <ol class="timeline">
+                    <li class="timeline-item">
+                        <h3>M1 — Core protocol</h3>
+                        <p class="muted">Minimal, secure, Pharos-native core</p>
+                        <ul class="list">
+                            <li>Registry + controller contracts, documented interfaces</li>
+                            <li>Resolver: address + text records, predictable behavior</li>
+                            <li>Threat model + reproducible tests</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <h3>M2 — UX & integrations</h3>
+                        <p class="muted">Make names work in wallets & dApps</p>
+                        <ul class="list">
+                            <li>Reverse resolution + reference implementation</li>
+                            <li>Explorer/indexer event mapping guidelines</li>
+                            <li>dApp integration examples + docs</li>
+                        </ul>
+                    </li>
+                    <li class="timeline-item">
+                        <h3>M3 — Hardening & adoption</h3>
+                        <p class="muted">Audit-ready release + launch checklist</p>
+                        <ul class="list">
+                            <li>Audit-ready release candidate with changelog</li>
+                            <li>Public docs: resolver spec + integration checklist</li>
+                            <li>Launch plan: monitoring + incident response notes</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="whitepaper" class="section section-alt" aria-labelledby="whitepaper-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="whitepaper-title">Whitepaper</h2>
+                    <p class="section-lead">
+                        A concise, review-friendly version for grant evaluation. Request a formatted PDF via email if needed.
+                    </p>
+                </header>
+
+                <div class="paper-grid">
+                    <article class="paper paper-hero">
+                        <h3>Abstract</h3>
+                        <p>
+                            EasyCryptoName is a Pharos-native naming and domain system that maps human‑readable names to on-chain records
+                            (addresses, metadata, and content pointers). The goal is to standardize resolution across Pharos while keeping
+                            the core minimal, secure, and easy to integrate.
+                        </p>
+                        <div class="paper-actions">
+                            <a class="button button-ghost" href="#contact">Request PDF</a>
+                        </div>
+                    </article>
+
+                    <div class="paper paper-toc" aria-label="Whitepaper sections">
+                        <h3>Key sections</h3>
+                        <details class="toc-item" open>
+                            <summary>Protocol overview</summary>
+                            <p>Registry, controller, resolver, reverse records, and event/indexing strategy.</p>
+                        </details>
+                        <details class="toc-item">
+                            <summary>Security model</summary>
+                            <p>Threat model, invariants, commit‑reveal registration, and audit readiness.</p>
+                        </details>
+                        <details class="toc-item">
+                            <summary>Adoption plan</summary>
+                            <p>Wallet + dApp integrations, reference code, and reviewable deliverables.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section" aria-labelledby="faq-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="faq-title">FAQ</h2>
+                </header>
+
+                <div class="faq">
+                    <details class="faq-item">
+                        <summary>Is this “just ENS on another chain”?</summary>
+                        <p>
+                            We borrow proven patterns, but the focus is Pharos adoption: predictable resolver behavior for wallets and dApps,
+                            integration docs, and milestone deliverables you can verify.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do you prevent front-running when registering names?</summary>
+                        <p>
+                            The baseline plan uses a commit‑reveal flow and controller rules that make registration predictable and reviewable.
+                            The threat model is part of M1.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What does the foundation get by funding this?</summary>
+                        <p>
+                            A shared naming primitive for the ecosystem: open interfaces, a reference implementation, and integration artifacts
+                            that make names usable across wallets, explorers, and dApps.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <div class="contact-card">
+                    <h2 id="contact-title">Talk to the team</h2>
+                    <p class="section-lead">
+                        If you’re reviewing the Pharos L1 grant, we can provide a longer technical spec, a milestone checklist, and a live walkthrough.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method" aria-label="Email addresses">
+                            <img src="assets/mail-icon.png" width="48" height="48" alt="" loading="lazy" decoding="async">
+                            <div class="contact-links">
+                                <a href="mailto:admin@easycryptoname.com">admin@easycryptoname.com</a>
+                                <a href="mailto:myblockchaindomain@gmail.com">myblockchaindomain@gmail.com</a>
+                            </div>
+                        </div>
+                        <p class="muted">
+                            Prefer a quick intro call? Email us with your timezone and we’ll propose times within 24 hours.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© 2026 EasyCryptoName. Built for the Pharos ecosystem.</p>
+            <a class="footer-link" href="#top">Back to top</a>
         </div>
-        <div class="footer">
-            <p>
-                © 2023 Easy Crypto Name. All Rights Reserved.
-            </p>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
