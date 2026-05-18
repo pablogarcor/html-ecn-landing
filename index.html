@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>EasyCryptoName — Names & Domains for Pharos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="EasyCryptoName brings ENS-like names to Pharos: human-readable domains that resolve to wallets, smart contracts, and on-chain profiles. Built as an ecosystem primitive, designed for security, and shipped with clear milestones.">
-    <meta name="color-scheme" content="light">
+    <meta name="description" content="EasyCryptoName brings .pha names to Pharos: human-readable domains that resolve to wallets, smart contracts, and on-chain profiles. Built as an ecosystem primitive with a security-first registry + resolver and wallet-ready integrations.">
+    <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -21,19 +21,20 @@
 <body id="top">
     <a class="skip-link" href="#main">Skip to content</a>
 
+    <div class="scroll-progress" aria-hidden="true"></div>
+
     <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="#top" aria-label="EasyCryptoName home">
                 <img
                     class="brand-logo"
                     src="assets/logo-ecn.webp"
-                    width="175"
-                    height="64"
+                    width="150"
+                    height="55"
                     alt=""
                     decoding="async"
                     fetchpriority="high"
                 >
-                <span class="brand-name">EasyCryptoName</span>
             </a>
 
             <details class="nav-mobile">
@@ -43,7 +44,8 @@
                 <nav class="nav-mobile-panel" aria-label="Mobile">
                     <a href="#product">Product</a>
                     <a href="#why">Why Pharos</a>
-                    <a href="#milestones">Milestones</a>
+                    <a href="#highlights">Highlights</a>
+                    <a href="#milestones">Roadmap</a>
                     <a href="#whitepaper">Whitepaper</a>
                     <a href="#contact">Contact</a>
                 </nav>
@@ -52,7 +54,8 @@
             <nav class="nav-desktop" aria-label="Primary">
                 <a href="#product">Product</a>
                 <a href="#why">Why Pharos</a>
-                <a href="#milestones">Milestones</a>
+                <a href="#highlights">Highlights</a>
+                <a href="#milestones">Roadmap</a>
                 <a href="#whitepaper">Whitepaper</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -62,33 +65,33 @@
     <main id="main">
         <section class="hero" aria-labelledby="hero-title">
             <div class="container hero-inner">
-                <div class="hero-content">
+                <div class="hero-content reveal" data-reveal>
                     <p class="eyebrow">Pharos ecosystem primitive</p>
                     <h1 id="hero-title">Human‑readable names for <span class="grad">Pharos</span>.</h1>
                     <p class="lead">
-                        EasyCryptoName is a Pharos-native naming layer for wallets, smart contracts, and profiles — shipped with
-                        clear milestones, security gates, and integration artifacts that drive real adoption.
+                        EasyCryptoName brings the <strong>.pha</strong> naming layer to Pharos: domains that resolve to wallets, smart contracts,
+                        and on-chain profiles, with a security-first core and an adoption plan built for mainnet launch.
                     </p>
 
                     <div class="hero-actions">
                         <a class="button button-primary" href="#whitepaper">Read the whitepaper</a>
-                        <a class="hero-link" href="#milestones">View milestones</a>
+                        <a class="hero-link" href="#milestones">View roadmap</a>
                     </div>
 
                     <div class="hero-inline" aria-label="Name examples">
                         <div class="hero-search" role="group" aria-label="Example names">
                             <span class="hero-search-label" aria-hidden="true">Example</span>
-                            <span class="hero-search-value">alice.pharos</span>
+                            <span class="hero-search-value" data-rotator="name">alice.pha</span>
                             <span class="hero-search-arrow" aria-hidden="true">→</span>
-                            <span class="hero-search-resolve">0x7b…4C2a</span>
+                            <span class="hero-search-resolve" data-rotator="address">0x7b…4C2a</span>
                         </div>
                         <p class="hero-note">
-                            Designed for wallets & dApps: predictable resolution rules, reverse lookup, and an audit-ready core.
+                            Designed for wallets & dApps: predictable resolution rules, reverse lookup, and an audit-ready registry + resolver.
                         </p>
                     </div>
                 </div>
 
-                <div class="hero-art" aria-hidden="true">
+                <div class="hero-art reveal" data-reveal data-reveal-delay="120" aria-hidden="true">
                     <div class="hero-art-stack">
                         <div class="hero-card hero-card-main">
                             <img src="assets/ecn-crypto.svg" alt="" loading="eager" decoding="async">
@@ -99,11 +102,11 @@
                             </div>
                         </div>
                         <div class="hero-card hero-card-secondary">
-                            <p class="hero-mini-title">Grant outcomes</p>
+                            <p class="hero-mini-title">What this unlocks</p>
                             <ul class="mini-list">
-                                <li>Open interfaces & specs</li>
-                                <li>Integration guides</li>
-                                <li>Milestone-based delivery</li>
+                                <li>Safer transfers</li>
+                                <li>Wallet-ready resolution</li>
+                                <li>App-wide identity</li>
                             </ul>
                         </div>
                     </div>
@@ -111,17 +114,51 @@
             </div>
         </section>
 
+        <section id="highlights" class="section section-alt" aria-labelledby="highlights-title">
+            <div class="container">
+                <header class="section-header reveal" data-reveal>
+                    <h2 id="highlights-title">At a glance</h2>
+                    <p class="section-lead">
+                        A naming layer is only useful if it is native, secure, and shipped with integrations. These are the concrete targets.
+                    </p>
+                </header>
+
+                <div class="stats">
+                    <article class="stat reveal" data-reveal data-reveal-delay="0">
+                        <p class="stat-label">Native TLD</p>
+                        <p class="stat-value"><span class="mono">.pha</span></p>
+                        <p class="stat-note">Pharos-first identity, designed for ecosystem adoption.</p>
+                    </article>
+                    <article class="stat reveal" data-reveal data-reveal-delay="60">
+                        <p class="stat-label">Performance Fit</p>
+                        <p class="stat-value"><span class="mono">30,000</span> TPS</p>
+                        <p class="stat-note">Built for Pharos UX: fast finality and high throughput.</p>
+                    </article>
+                    <article class="stat reveal" data-reveal data-reveal-delay="120">
+                        <p class="stat-label">Wallet-Grade Resolution</p>
+                        <p class="stat-value">Forward + reverse</p>
+                        <p class="stat-note">Send to a name, display names across the UI, and reliably resolve back to addresses.</p>
+                    </article>
+                    <article class="stat reveal" data-reveal data-reveal-delay="180">
+                        <p class="stat-label">RealFi-Ready Identity</p>
+                        <p class="stat-value">Metadata schema</p>
+                        <p class="stat-note">A path to structured, verifiable records that can power compliant, institution-friendly flows.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="product" class="section" aria-labelledby="product-title">
             <div class="container">
-                <header class="section-header">
+                <header class="section-header reveal" data-reveal>
                     <h2 id="product-title">What EasyCryptoName ships for Pharos</h2>
                     <p class="section-lead">
-                        A lean on-chain core, plus the integration layer that makes names usable on day one.
+                        A lean on-chain core, plus the integration layer that makes names usable everywhere from day one.
                     </p>
                 </header>
 
                 <div class="cards">
-                    <article class="card">
+                    <article class="card reveal tilt" data-reveal data-tilt>
                         <div class="card-icon" aria-hidden="true">
                             <img src="assets/ecn-document.svg" alt="" loading="lazy" decoding="async">
                         </div>
@@ -136,7 +173,7 @@
                         </ul>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal tilt" data-reveal data-reveal-delay="80" data-tilt>
                         <div class="card-icon" aria-hidden="true">
                             <img src="assets/ecn-laptop.svg" alt="" loading="lazy" decoding="async">
                         </div>
@@ -151,18 +188,18 @@
                         </ul>
                     </article>
 
-                    <article class="card">
+                    <article class="card reveal tilt" data-reveal data-reveal-delay="160" data-tilt>
                         <div class="card-icon" aria-hidden="true">
                             <img src="assets/ecn-crypto.svg" alt="" loading="lazy" decoding="async">
                         </div>
                         <h3>Adoption package</h3>
                         <p>
-                            A grant should buy adoption: integration guides, reference code, and a checklist to make names work across Pharos.
+                            Names are only useful when apps and wallets support them. We ship guides, reference code, and SDKs so integration is easy.
                         </p>
                         <ul class="list">
-                            <li>SDK patterns for dApps</li>
-                            <li>Wallet integration examples</li>
-                            <li>Spec-driven documentation</li>
+                            <li>Open-source SDK (JS/TS first)</li>
+                            <li>Wallet integrations (OKX priority)</li>
+                            <li>Spec-driven docs + checklists</li>
                         </ul>
                     </article>
                 </div>
@@ -171,7 +208,7 @@
 
         <section id="why" class="section section-alt" aria-labelledby="why-title">
             <div class="container">
-                <header class="section-header">
+                <header class="section-header reveal" data-reveal>
                     <h2 id="why-title">Why this matters for Pharos</h2>
                     <p class="section-lead">
                         Naming is UX infrastructure. It reduces errors, improves onboarding, and creates a shared identity layer for the ecosystem.
@@ -179,22 +216,22 @@
                 </header>
 
                 <div class="feature-grid">
-                    <article class="feature">
+                    <article class="feature reveal" data-reveal>
                         <h3>Safer transfers</h3>
                         <p>Users send to a name, not a 42‑character address. Fewer mistakes, higher trust.</p>
                     </article>
-                    <article class="feature">
+                    <article class="feature reveal" data-reveal data-reveal-delay="60">
                         <h3>Faster onboarding</h3>
                         <p>One identity that works everywhere on Pharos — wallets, explorers, and dApps.</p>
                     </article>
-                    <article class="feature">
+                    <article class="feature reveal" data-reveal data-reveal-delay="120">
                         <h3>Composable profiles</h3>
                         <p>Records for metadata and content pointers, portable across apps by design.</p>
                     </article>
-                    <article class="feature feature-callout">
-                        <h3>Foundation-aligned deliverables</h3>
-                        <p>Specs, reference implementation, integrations, and milestone-based delivery you can verify.</p>
-                        <a class="feature-link" href="#milestones">See milestones →</a>
+                    <article class="feature feature-callout reveal" data-reveal data-reveal-delay="180">
+                        <h3>Production-ready from day one</h3>
+                        <p>Clear specs, predictable behavior, indexing events, and an integration kit so wallets and dApps can rely on it.</p>
+                        <a class="feature-link" href="#milestones">See roadmap →</a>
                     </article>
                 </div>
             </div>
@@ -202,10 +239,10 @@
 
         <section id="milestones" class="section" aria-labelledby="milestones-title">
             <div class="container">
-                <header class="section-header">
-                    <h2 id="milestones-title">Milestones (grant-ready execution)</h2>
+                <header class="section-header reveal" data-reveal>
+                    <h2 id="milestones-title">Roadmap (mainnet-ready delivery)</h2>
                     <p class="section-lead">
-                        Clear scope, measurable outputs, and security gates. Each milestone is reviewable end-to-end by the foundation.
+                        Clear scope, measurable outputs, and security gates. Each phase ends with testable artifacts and integration references.
                     </p>
                 </header>
 
@@ -243,27 +280,27 @@
 
         <section id="whitepaper" class="section section-alt" aria-labelledby="whitepaper-title">
             <div class="container">
-                <header class="section-header">
+                <header class="section-header reveal" data-reveal>
                     <h2 id="whitepaper-title">Whitepaper</h2>
                     <p class="section-lead">
-                        A concise, review-friendly version for grant evaluation. Request a formatted PDF via email if needed.
+                        A concise, readable technical overview. Request a formatted PDF via email if needed.
                     </p>
                 </header>
 
                 <div class="paper-grid">
-                    <article class="paper paper-hero">
+                    <article class="paper paper-hero reveal" data-reveal>
                         <h3>Abstract</h3>
                         <p>
-                            EasyCryptoName is a Pharos-native naming and domain system that maps human‑readable names to on-chain records
-                            (addresses, metadata, and content pointers). The goal is to standardize resolution across Pharos while keeping
-                            the core minimal, secure, and easy to integrate.
+                            Pharos Domain Service is a production-grade, Pharos-native on-chain naming system that maps <span class="mono">.pha</span>
+                            domains to on-chain records (addresses, content pointers, profiles, and future RWA-ready metadata). The goal is to
+                            standardize resolution across Pharos while keeping the core minimal, secure, and simple to integrate.
                         </p>
                         <div class="paper-actions">
-                            <a class="button button-ghost" href="#contact">Request PDF</a>
+                            <a class="button button-primary" href="assets/whitepaper.pdf" download>Download PDF</a>
                         </div>
                     </article>
 
-                    <div class="paper paper-toc" aria-label="Whitepaper sections">
+                    <div class="paper paper-toc reveal" data-reveal data-reveal-delay="120" aria-label="Whitepaper sections">
                         <h3>Key sections</h3>
                         <details class="toc-item" open>
                             <summary>Protocol overview</summary>
@@ -275,7 +312,7 @@
                         </details>
                         <details class="toc-item">
                             <summary>Adoption plan</summary>
-                            <p>Wallet + dApp integrations, reference code, and reviewable deliverables.</p>
+                            <p>Wallet + dApp integrations, SDKs, and checklists that make names work across the ecosystem.</p>
                         </details>
                     </div>
                 </div>
@@ -284,30 +321,37 @@
 
         <section id="faq" class="section" aria-labelledby="faq-title">
             <div class="container">
-                <header class="section-header">
+                <header class="section-header reveal" data-reveal>
                     <h2 id="faq-title">FAQ</h2>
                 </header>
 
                 <div class="faq">
-                    <details class="faq-item">
+                    <details class="faq-item reveal" data-reveal>
                         <summary>Is this “just ENS on another chain”?</summary>
                         <p>
                             We borrow proven patterns, but the focus is Pharos adoption: predictable resolver behavior for wallets and dApps,
                             integration docs, and milestone deliverables you can verify.
                         </p>
                     </details>
-                    <details class="faq-item">
+                    <details class="faq-item reveal" data-reveal data-reveal-delay="70">
                         <summary>How do you prevent front-running when registering names?</summary>
                         <p>
-                            The baseline plan uses a commit‑reveal flow and controller rules that make registration predictable and reviewable.
-                            The threat model is part of M1.
+                            We use a two-step “commit then reveal” flow. In plain terms: you first lock an intent to register, then finalize it later,
+                            which prevents others from copying your registration in the same block.
                         </p>
                     </details>
-                    <details class="faq-item">
-                        <summary>What does the foundation get by funding this?</summary>
+                    <details class="faq-item reveal" data-reveal data-reveal-delay="140">
+                        <summary>Why does Pharos need a native name service?</summary>
                         <p>
-                            A shared naming primitive for the ecosystem: open interfaces, a reference implementation, and integration artifacts
-                            that make names usable across wallets, explorers, and dApps.
+                            Because names are UX infrastructure. A Pharos-native system standardizes how apps display identities and resolve payments,
+                            reduces errors, and enables a shared profile layer across wallets, explorers, and dApps.
+                        </p>
+                    </details>
+                    <details class="faq-item reveal" data-reveal data-reveal-delay="210">
+                        <summary>How is this different from earlier testnet name prototypes?</summary>
+                        <p>
+                            The goal is a mainnet-ready registry for <span class="mono">.pha</span>: formal interfaces, security gates, indexing events,
+                            and an integration package (SDK + wallet/dApp references) so names are usable, not just minted.
                         </p>
                     </details>
                 </div>
@@ -316,10 +360,10 @@
 
         <section id="contact" class="section section-contact" aria-labelledby="contact-title">
             <div class="container contact-inner">
-                <div class="contact-card">
+                <div class="contact-card reveal" data-reveal>
                     <h2 id="contact-title">Talk to the team</h2>
                     <p class="section-lead">
-                        If you’re reviewing the Pharos L1 grant, we can provide a longer technical spec, a milestone checklist, and a live walkthrough.
+                        We can share a longer spec, integration notes, and a live walkthrough of the protocol and resolver behavior.
                     </p>
 
                     <div class="contact-methods">
@@ -345,5 +389,7 @@
             <a class="footer-link" href="#top">Back to top</a>
         </div>
     </footer>
+
+    <script src="index.js" defer></script>
 </body>
 </html>
